@@ -40,5 +40,5 @@ for i in range(0,100):
 fig = ff.create_distplot([mean_list], ["student marks"], show_hist=False)
 fig.add_trace(go.Scatter(x=[mean, mean], y=[0, 0.20], mode="lines", name="MEAN"))
 fig.show()
-z_score = (mean - mean_list)/std_deviation
+z_score = (mean - set_of_means)/std_deviation
 print("The z score is = ",z_score)
